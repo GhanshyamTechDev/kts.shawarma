@@ -8,7 +8,7 @@ function Header() {
       <NavLink to="/">Home</NavLink><a href="#story">Story</a><a href="#flavours">Menu</a>
       <a href="#partner">Services</a><a href="#outlets">Visit Us</a><a href="#contact">Contact</a>
     </nav>
-    <a href="tel:+918977263080" className="order">Call now</a>
+    <NavLink to="/order-now" className="order">Order now</NavLink>
   </header>
 }
 
