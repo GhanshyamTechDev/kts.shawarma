@@ -1,9 +1,10 @@
 import { mediaUrl, promises } from '../../data/siteData'
+import shawarmaHero from '../../assets/kts-shawarma-hero.png'
 
 function Intro() {
   return <>
     <section className="promise">{promises.map(([image, title, subtitle]) => <article key={title}><img src={`${mediaUrl}${image}`} alt="" /><h3>{title}<br />{subtitle}</h3></article>)}</section>
-    <section className="intro" id="story"><div className="genie"><img src="https://aladdinshawarma.in/wp-content/uploads/2024/12/cartoon-jinnee-illustration-png.webp" alt="Aladdin genie illustration" /></div><div><p className="eyebrow">WELCOME TO</p><h2>Aladdin Shawarma,<br />where <em>flavours</em><br />and magic collide.</h2><p>Enter a world where every bite tells a story. Our kitchen brings the rich legacy of Middle Eastern and Turkish cuisine to life, with a little magic in every wrap.</p><a className="underline" href="#flavours">Discover our story &rarr;</a></div></section>
+    <section className="intro" id="story"><div className="genie"><img src={shawarmaHero} alt="Fresh grilled chicken shawarma" /></div><div><p className="eyebrow">WELCOME TO</p><h2>KT's Shawarma &amp; Grill,<br />where <em>flavour</em><br />comes first.</h2><p>Juicy, flavourful and unforgettable—our shawarmas are made with premium quality meat, fresh ingredients and the perfect grill.</p><a className="underline" href="#flavours">Explore our menu &rarr;</a></div></section>
   </>
 }
 

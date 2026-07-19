@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom'
-import { mediaUrl } from '../../data/siteData'
+import ktsLogo from '../../assets/kts-logo.svg'
 
 function Logo({ small = false }) {
   return <Link className={`logo ${small ? 'small' : ''}`} to="/">
-    <img src={`${mediaUrl}Logo-2-1-png.webp`} alt="Aladdin Shawarma" />
+    <img src={ktsLogo} alt="KT's Shawarma & Grill" />
   </Link>
 }
 
