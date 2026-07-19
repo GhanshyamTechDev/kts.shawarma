@@ -10,10 +10,16 @@
   },
   "dependencies": {
     "@vitejs/plugin-react": "latest",
-    "vite": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "react-router-dom": "latest"
+    "react-router-dom": "latest",
+    "vite": "latest"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@babel/core": "^7.29.7",
+    "@babel/preset-react": "^8.0.1",
+    "@locator/babel-jsx": "^0.5.1",
+    "@locator/runtime": "^0.5.1",
+    "@rolldown/plugin-babel": "^0.2.3"
+  }
 }
